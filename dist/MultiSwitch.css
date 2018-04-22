@@ -1,0 +1,52 @@
+.switch {
+    display: inline-block;
+    height: 30px;
+    margin-top: 3px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 200px;
+    border-radius: 30px;
+    border: solid 1px #ddd;
+    position: relative;
+}
+
+.switch-content {
+    float: left;
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    position: inherit;
+    z-index: 10;
+    transition: color 0.75s cubic-bezier(0, 1, 0, 0);
+    will-change: transform;
+    animation: switch-handle-color 0.5s;
+}
+
+.switch-handle {
+    position: absolute;
+    float: left;
+    height: 30px;
+    width: 50%;
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+    background-color: #3366cc;
+    border-radius: 30px;
+    top: 2px;
+    transition: left 0.5s cubic-bezier(0.17, 0.67, .83, .67);
+    will-change: transform;
+    animation: switch-handle-move 0.5s;
+}
+
+@keyframes switch-handle-move {
+    0% { left: 2px; }
+}
+
+@keyframes switch-handle-color {
+    0% {color: white;}
+}
