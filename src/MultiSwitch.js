@@ -33,6 +33,7 @@ export default class MultiSwitch extends Component {
                   height,
                   borderColor,
                   borderWidth,
+                  selectedSwitchColor,
             } = this.props
             const {
                   selectedSwitch
@@ -78,6 +79,7 @@ export default class MultiSwitch extends Component {
                   left: `${selectedSwitch * eachSwitchWidth + 2}px`,
                   height,
                   lineHeight: height,
+                  backgroundColor: selectedSwitchColor,
             }
 
             let classNameHandle = 'switch-handle switch-handle-move'
