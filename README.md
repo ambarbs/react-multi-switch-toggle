@@ -2,6 +2,7 @@
 
 A fully configurable multiple switch component.
 
+## [Demo](https://ambarbs.github.io/react-multi-switch-toggle/)
 
 ## Getting Started
 

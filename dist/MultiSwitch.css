@@ -1,4 +1,4 @@
-.switch {
+.multi-switch-container {
     display: inline-block;
     height: 30px;
     margin-top: 3px;
@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.switch-content {
+.multi-switch-content {
     float: left;
     width: 50%;
     font-size: 12px;
@@ -27,7 +27,7 @@
     animation: switch-handle-color 0.5s;
 }
 
-.switch-handle {
+.multi-switch-handle {
     position: absolute;
     float: left;
     height: 30px;
@@ -43,10 +43,10 @@
     animation: switch-handle-move 0.5s;
 }
 
-@keyframes switch-handle-move {
+@keyframes multi-switch-handle-move {
     0% { left: 2px; }
 }
 
-@keyframes switch-handle-color {
+@keyframes multi-switch-handle-color {
     0% {color: white;}
 }

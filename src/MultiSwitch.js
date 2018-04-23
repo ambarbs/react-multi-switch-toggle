@@ -57,10 +57,10 @@ export default class MultiSwitch extends Component {
                         fontSize,
                         fontWeight,
                   }
-                  let classSwitchContent = `switch-content`
+                  let classSwitchContent = `multi-switch-content`
 
                   if (selectedSwitch === index) {
-                        classSwitchContent = `${classSwitchContent} switch-handle-color`
+                        classSwitchContent = `${classSwitchContent} multi-switch-handle-color`
                         labelStyles.color = selectedFontColor
                   }
                   return <label
@@ -82,9 +82,9 @@ export default class MultiSwitch extends Component {
                   backgroundColor: selectedSwitchColor,
             }
 
-            let classNameHandle = 'switch-handle switch-handle-move'
+            let classNameHandle = 'multi-switch-handle multi-switch-handle-move'
             return (
-              <div className='switch' style={switchStyles}>
+              <div className='multi-switch-container' style={switchStyles}>
                     {switches}
                     <span
                       className={classNameHandle}

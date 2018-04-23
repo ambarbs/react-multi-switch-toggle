@@ -64,7 +64,8 @@ var MultiSwitch = function (_Component) {
                       fontWeight = _props.fontWeight,
                       height = _props.height,
                       borderColor = _props.borderColor,
-                      borderWidth = _props.borderWidth;
+                      borderWidth = _props.borderWidth,
+                      selectedSwitchColor = _props.selectedSwitchColor;
                   var selectedSwitch = this.state.selectedSwitch;
 
                   var noOfSwitches = texts.length || 2;
@@ -86,10 +87,10 @@ var MultiSwitch = function (_Component) {
                               fontSize: fontSize,
                               fontWeight: fontWeight
                         };
-                        var classSwitchContent = 'switch-content';
+                        var classSwitchContent = 'multi-switch-content';
 
                         if (selectedSwitch === index) {
-                              classSwitchContent = classSwitchContent + ' switch-handle-color';
+                              classSwitchContent = classSwitchContent + ' multi-switch-handle-color';
                               labelStyles.color = selectedFontColor;
                         }
                         return _react2.default.createElement(
@@ -109,13 +110,14 @@ var MultiSwitch = function (_Component) {
                         width: labelWidth,
                         left: selectedSwitch * eachSwitchWidth + 2 + 'px',
                         height: height,
-                        lineHeight: height
+                        lineHeight: height,
+                        backgroundColor: selectedSwitchColor
                   };
 
-                  var classNameHandle = 'switch-handle switch-handle-move';
+                  var classNameHandle = 'multi-switch-handle multi-switch-handle-move';
                   return _react2.default.createElement(
                         'div',
-                        { className: 'switch', style: switchStyles },
+                        { className: 'multi-switch-container', style: switchStyles },
                         switches,
                         _react2.default.createElement('span', {
                               className: classNameHandle,

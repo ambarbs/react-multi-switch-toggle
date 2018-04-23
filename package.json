@@ -1,6 +1,6 @@
 {
   "name": "react-multi-switch-toggle",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "A generic React Multiple Toggle Switch component",
   "main": "dist/index.js",
   "scripts": {
